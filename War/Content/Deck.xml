@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deck>
+  <!-- Army Cards-->
+	<!-- Soldiers -->
+  <card name="Archers" type="Army" ranks="6" health="4" attack="2" defense="1" cost="1" tactics="0x0" img="Archer.png" snd=""/>
+  <card name="Berserkers" type="Army" ranks="4" health="7" attack="3" defense="3" cost="2" tactics="0x0" img="Berserker.png" snd=""/>
+  <card name="Knights" type="Army" ranks="5" health="5" attack="5" defense="1" cost="2" tactics="0x0" img="Knight.png" snd=""/>
+  <card name="Militia" type="Army" ranks="12" health="2" attack="1" defense="1" cost="2" tactics="0x0" img="Militia.png" snd=""/>
+  <card name="Mounted Knights" type="Army" ranks="4" health="6" attack="3" defense="2" cost="3" tactics="0x0" img="MountedKnight.png" snd=""/>
+  <card name="Pikemen" type="Army" ranks="8" health="4" attack="3" defense="2" cost="3" tactics="0x0" img="Pikemen.png" snd=""/>
+  <card name="Swordsmen" type="Army" ranks="8" health="4" attack="6" defense="1" cost="3" tactics="0x0" img="Swordsman.png" snd=""/>
+	<!-- Heroes -->
+  <card name="Cleric" type="Army" ranks="1" health="10" attack="5" defense="4" cost="2" tactics="0x0" img="Cleric.png" snd=""/>
+  <card name="Fighter" type="Army" ranks="1" health="24" attack="10" defense="3" cost="3" tactics="0x0" img="Fighter.png" snd=""/>
+  <card name="Ranger" type="Army" ranks="1" health="16" attack="7" defense="1" cost="2" tactics="0x0" img="Ranger.png" snd=""/>
+  <card name="Rogue" type="Army" ranks="1" health="10" attack="12" defense="1" cost="1" tactics="0x0" img="Rogue.png" snd=""/>
+  <card name="Wizard" type="Army" ranks="1" health="8" attack="10" defense="2" cost="1" tactics="0x0" img="Wizard.png" snd=""/>
+	<!-- Beasts -->
+  <card name="Chimera" type="Army" ranks="1" health="10" attack="8" defense="4" cost="3" tactics="0x0" img="Chimera.png" snd=""/>
+  <card name="Dragon" type="Army" ranks="1" health="20" attack="15" defense="5" cost="5" tactics="0x0" img="Dragon.png" snd=""/>
+  <card name="Fire Demon" type="Army" ranks="1" health="14" attack="10" defense="4" cost="4" tactics="0x0" img="FireDemon.png" snd=""/>
+  <card name="Giant" type="Army" ranks="1" health="14" attack="6" defense="3" cost="4" tactics="0x0" img="Giant.png" snd=""/>
+  <card name="Hydra" type="Army" ranks="1" health="8" attack="6" defense="3" cost="3" tactics="0x0" img="Hydra.png" snd=""/>
+  <card name="Ogre" type="Army" ranks="1" health="8" attack="5" defense="4" cost="3" tactics="0x0" img="Ogre.png" snd=""/>
+  <card name="Troll" type="Army" ranks="1" health="10" attack="4" defense="4" cost="3" tactics="0x0" img="Troll.png" snd=""/>
+  <!-- Tactics Cards -->
+  <card name="Banish" type="Tactics" ranks="0" health="0" attack="0" defense="0" cost="5" tactics="0x100" img="Spell_Banish.png" snd="banish.wav"/>
+  <card name="Destroy" type="Tactics" ranks="0" health="0" attack="0" defense="0" cost="5" tactics="0x200" img="Spell_Destroy.png" snd="destroy.wav"/>
+  <card name="Fireball" type="Tactics" ranks="0" health="5" attack="0" defense="0" cost="4" tactics="0x020" img="Spell_Fireball.png" snd="fireball.wav"/>
+  <card name="Heal" type="Tactics" ranks="0" health="3" attack="0" defense="0" cost="2" tactics="0x002" img="Spell_Heal.png" snd=""/>
+  <card name="Ice Storm" type="Tactics" ranks="5" health="0" attack="0" defense="0" cost="3" tactics="0x010" img="Spell_IceStorm.png" snd="icestorm.wav"/>
+  <card name="Lightning" type="Tactics" ranks="0" health="0" attack="1" defense="3" cost="4" tactics="0x0C0" img="Spell_Lightning.png" snd="lightning.wav"/>
+  <card name="Reinforce" type="Tactics" ranks="3" health="0" attack="0" defense="0" cost="3" tactics="0x001" img="Spell_Reinforce.png" snd="reinforce.wav"/>
+  <card name="Mythril Armor" type="Tactics" ranks="0" health="0" attack="0" defense="3" cost="2" tactics="0x008" img="Mythril_Armor.png" snd=""/>
+  <card name="Mythril Axe" type="Tactics" ranks="0" health="0" attack="1" defense="0" cost="1" tactics="0x004" img="Mythril_Axe.png" snd=""/>
+  <card name="Mythril Shield" type="Tactics" ranks="0" health="0" attack="0" defense="1" cost="1" tactics="0x008" img="Mythril_Shield.png" snd=""/>
+  <card name="Mythril Sword" type="Tactics" ranks="0" health="0" attack="3" defense="0" cost="2" tactics="0x004" img="Mythril_Sword.png" snd=""/>
+</deck>

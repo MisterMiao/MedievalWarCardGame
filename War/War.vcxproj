@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{920A12E0-DBEC-46B0-BA41-443E094020FB}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Lab6</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(SolutionDir)\ThirdParty\SDL2-2.0.3\include;$(SolutionDir)\ThirdParty\SDL2_ttf-2.0.12\include;$(SolutionDir)\ThirdParty\SDL2_mixer-2.0.0\include;$(SolutionDir)\ThirdParty\SDL2_image-2.0.0\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)\ThirdParty\SDL2-2.0.3\lib\x86;$(SolutionDir)\ThirdParty\SDL2_ttf-2.0.12\lib\x86;$(SolutionDir)\ThirdParty\SDL2_mixer-2.0.0\lib\x86;$(SolutionDir)\ThirdParty\SDL2_image-2.0.0\lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_ttf.lib;SDL2_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Card.h" />
+    <ClInclude Include="Deck.h" />
+    <ClInclude Include="Engine.h" />
+    <ClInclude Include="Geometry.h" />
+    <ClInclude Include="HelperFunctions.h" />
+    <ClInclude Include="Input.h" />
+    <ClInclude Include="MovingBackground.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="Stats.h" />
+    <ClInclude Include="Sprite.h" />
+    <ClInclude Include="tinyxml2.h" />
+    <ClInclude Include="War.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Card.cpp" />
+    <ClCompile Include="ContentManager.cpp" />
+    <ClCompile Include="Deck.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="InputManager.cpp" />
+    <ClCompile Include="KeyboardInput.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="MouseInput.cpp" />
+    <ClCompile Include="MovingBackground.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="Rectangle.cpp" />
+    <ClCompile Include="Sprite.cpp" />
+    <ClCompile Include="Stats.cpp" />
+    <ClCompile Include="Timer.cpp" />
+    <ClCompile Include="tinyxml2.cpp" />
+    <ClCompile Include="Vector2.cpp" />
+    <ClCompile Include="War.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="Content\Deck.xml">
+      <SubType>Designer</SubType>
+    </Xml>
+    <Xml Include="Content\Stats.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Content\Images\Cards\Archer.png" />
+    <Image Include="Content\Images\Cards\Berserker.png" />
+    <Image Include="Content\Images\Cards\CardBack.png" />
+    <Image Include="Content\Images\Cards\Chimera.png" />
+    <Image Include="Content\Images\Cards\Cleric.png" />
+    <Image Include="Content\Images\Cards\Dragon.png" />
+    <Image Include="Content\Images\Cards\Fighter.png" />
+    <Image Include="Content\Images\Cards\FireDemon.png" />
+    <Image Include="Content\Images\Cards\Giant.png" />
+    <Image Include="Content\Images\Cards\Hydra.png" />
+    <Image Include="Content\Images\Cards\Knight.png" />
+    <Image Include="Content\Images\Cards\Militia.png" />
+    <Image Include="Content\Images\Cards\MountedKnight.png" />
+    <Image Include="Content\Images\Cards\Mythril_Armor.png" />
+    <Image Include="Content\Images\Cards\Mythril_Axe.png" />
+    <Image Include="Content\Images\Cards\Mythril_Shield.png" />
+    <Image Include="Content\Images\Cards\Mythril_Sword.png" />
+    <Image Include="Content\Images\Cards\Ogre.png" />
+    <Image Include="Content\Images\Cards\Pikemen.png" />
+    <Image Include="Content\Images\Cards\Ranger.png" />
+    <Image Include="Content\Images\Cards\Rogue.png" />
+    <Image Include="Content\Images\Cards\Spell_Banish.png" />
+    <Image Include="Content\Images\Cards\Spell_Destroy.png" />
+    <Image Include="Content\Images\Cards\Spell_Fireball.png" />
+    <Image Include="Content\Images\Cards\Spell_Heal.png" />
+    <Image Include="Content\Images\Cards\Spell_IceStorm.png" />
+    <Image Include="Content\Images\Cards\Spell_Lightning.png" />
+    <Image Include="Content\Images\Cards\Spell_Reinforce.png" />
+    <Image Include="Content\Images\Cards\Swordsman.png" />
+    <Image Include="Content\Images\Cards\Troll.png" />
+    <Image Include="Content\Images\Cards\Wizard.png" />
+    <Image Include="Content\Images\Splash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="Content\Fonts\SourceSansPro-Bold.ttf" />
+    <Font Include="Content\Fonts\SourceSansPro-Regular.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="Content\Sounds\banish.wav" />
+    <Media Include="Content\Sounds\card_dead.wav" />
+    <Media Include="Content\Sounds\card_played.wav" />
+    <Media Include="Content\Sounds\destroy.wav" />
+    <Media Include="Content\Sounds\end_music.wav" />
+    <Media Include="Content\Sounds\fireball.wav" />
+    <Media Include="Content\Sounds\game_music.wav" />
+    <Media Include="Content\Sounds\icestorm.wav" />
+    <Media Include="Content\Sounds\lightning.wav" />
+    <Media Include="Content\Sounds\reinforce.wav" />
+    <Media Include="Content\Sounds\splash_music.wav" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

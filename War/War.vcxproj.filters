@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Resource Files\Images">
+      <UniqueIdentifier>{cacb1817-9037-4898-8f0d-61192279a2f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game Engine">
+      <UniqueIdentifier>{d8e294ad-e283-401c-a3dd-925993b89c0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game Engine">
+      <UniqueIdentifier>{adbe6551-6a79-4677-a000-d568ed3c8418}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\War">
+      <UniqueIdentifier>{44212332-cc9d-460e-851d-cca6464e6b5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\War">
+      <UniqueIdentifier>{ab2a2121-1746-4823-8915-a4b2ef5ad2ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Fonts">
+      <UniqueIdentifier>{3ddf86ab-4c38-46db-8a0e-554f3bf187cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Images\Cards">
+      <UniqueIdentifier>{d2e52216-2ab6-4199-8d31-c5d724137462}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Sounds">
+      <UniqueIdentifier>{2b316242-ac00-4dc7-b603-3d0fd661dc95}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="tinyxml2.h">
+      <Filter>Header Files\Game Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="HelperFunctions.h">
+      <Filter>Header Files\Game Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Header Files\War</Filter>
+    </ClInclude>
+    <ClInclude Include="Card.h">
+      <Filter>Header Files\War</Filter>
+    </ClInclude>
+    <ClInclude Include="Deck.h">
+      <Filter>Header Files\War</Filter>
+    </ClInclude>
+    <ClInclude Include="War.h">
+      <Filter>Header Files\War</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine.h">
+      <Filter>Header Files\Game Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Geometry.h">
+      <Filter>Header Files\Game Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Input.h">
+      <Filter>Header Files\Game Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprite.h">
+      <Filter>Header Files\War</Filter>
+    </ClInclude>
+    <ClInclude Include="Stats.h">
+      <Filter>Header Files\War</Filter>
+    </ClInclude>
+    <ClInclude Include="MovingBackground.h">
+      <Filter>Header Files\War</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ContentManager.cpp">
+      <Filter>Source Files\Game Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Source Files\Game Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxml2.cpp">
+      <Filter>Source Files\Game Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Source Files\War</Filter>
+    </ClCompile>
+    <ClCompile Include="Deck.cpp">
+      <Filter>Source Files\War</Filter>
+    </ClCompile>
+    <ClCompile Include="Card.cpp">
+      <Filter>Source Files\War</Filter>
+    </ClCompile>
+    <ClCompile Include="War.cpp">
+      <Filter>Source Files\War</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector2.cpp">
+      <Filter>Source Files\Game Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Rectangle.cpp">
+      <Filter>Source Files\Game Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="MouseInput.cpp">
+      <Filter>Source Files\Game Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="InputManager.cpp">
+      <Filter>Source Files\Game Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyboardInput.cpp">
+      <Filter>Source Files\Game Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer.cpp">
+      <Filter>Source Files\Game Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Sprite.cpp">
+      <Filter>Source Files\War</Filter>
+    </ClCompile>
+    <ClCompile Include="Stats.cpp">
+      <Filter>Source Files\War</Filter>
+    </ClCompile>
+    <ClCompile Include="MovingBackground.cpp">
+      <Filter>Source Files\War</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="Content\Deck.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="Content\Stats.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Content\Images\Cards\Spell_Destroy.png">
+      <Filter>Resource Files\Images\Cards</Filter>
+    </Image>
+    <Image Include="Content\Images\Cards\Spell_Fireball.png">
+      <Filter>Resource Files\Images\Cards</Filter>
+    </Image>
+    <Image Include="Content\Images\Cards\Spell_Heal.png">
+      <Filter>Resource Files\Images\Cards</Filter>
+    </Image>
+    <Image Include="Content\Images\Cards\Spell_IceStorm.png">
+      <Filter>Resource Files\Images\Cards</Filter>
+    </Image>
+    <Image Include="Content\Images\Cards\Spell_Lightning.png">
+      <Filter>Resource Files\Images\Cards</Filter>
+    </Image>
+    <Image Include="Content\Images\Cards\Spell_Reinforce.png">
+      <Filter>Resource Files\Images\Cards</Filter>
+    </Image>
+    <Image Include="Content\Images\Cards\Swordsman.png">
+      <Filter>Resource Files\Images\Cards</Filter>
+    </Image>
+    <Image Include="Content\Images\Cards\Troll.png">
+      <Filter>Resource Files\Images\Cards</Filter>
+    </Image>
+    <Image Include="Content\Images\Cards\Wizard.png">
+      <Filter>Resource Files\Images\Cards</Filter>
+    </Image>
+    <Image Include="Content\Images\Cards\Archer.png">
+      <Filter>Resource Files\Images\Cards</Filter>
+    </Image>
+    <Image Include="Content\Images\Cards\Berserker.png">
+      <Filter>Resource Files\Images\Cards</Filter>
+    </Image>
+    <Image Include="Content\Images\Cards\CardBack.png">
+      <Filter>Resource Files\Images\Cards</Filter>
+    </Image>
+    <Image Include="Content\Images\Cards\Chimera.png">
+      <Filter>Resource Files\Images\Cards</Filter>
+    </Image>
+    <Image Include="Content\Images\Cards\Cleric.png">
+      <Filter>Resource Files\Images\Cards</Filter>
+    </Image>
+    <Image Include="Content\Images\Cards\Dragon.png">
+      <Filter>Resource Files\Images\Cards</Filter>
+    </Image>
+    <Image Include="Content\Images\Cards\Fighter.png">
+      <Filter>Resource Files\Images\Cards</Filter>
+    </Image>
+    <Image Include="Content\Images\Cards\Hydra.png">
+      <Filter>Resource Files\Images\Cards</Filter>
+    </Image>
+    <Image Include="Content\Images\Cards\Knight.png">
+      <Filter>Resource Files\Images\Cards</Filter>
+    </Image>
+    <Image Include="Content\Images\Cards\Militia.png">
+      <Filter>Resource Files\Images\Cards</Filter>
+    </Image>
+    <Image Include="Content\Images\Cards\MountedKnight.png">
+      <Filter>Resource Files\Images\Cards</Filter>
+    </Image>
+    <Image Include="Content\Images\Cards\Mythril_Armor.png">
+      <Filter>Resource Files\Images\Cards</Filter>
+    </Image>
+    <Image Include="Content\Images\Cards\Mythril_Axe.png">
+      <Filter>Resource Files\Images\Cards</Filter>
+    </Image>
+    <Image Include="Content\Images\Cards\Mythril_Shield.png">
+      <Filter>Resource Files\Images\Cards</Filter>
+    </Image>
+    <Image Include="Content\Images\Cards\Mythril_Sword.png">
+      <Filter>Resource Files\Images\Cards</Filter>
+    </Image>
+    <Image Include="Content\Images\Cards\Ogre.png">
+      <Filter>Resource Files\Images\Cards</Filter>
+    </Image>
+    <Image Include="Content\Images\Cards\Pikemen.png">
+      <Filter>Resource Files\Images\Cards</Filter>
+    </Image>
+    <Image Include="Content\Images\Cards\Ranger.png">
+      <Filter>Resource Files\Images\Cards</Filter>
+    </Image>
+    <Image Include="Content\Images\Cards\Rogue.png">
+      <Filter>Resource Files\Images\Cards</Filter>
+    </Image>
+    <Image Include="Content\Images\Cards\Spell_Banish.png">
+      <Filter>Resource Files\Images\Cards</Filter>
+    </Image>
+    <Image Include="Content\Images\Splash.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="Content\Images\Cards\FireDemon.png">
+      <Filter>Resource Files\Images\Cards</Filter>
+    </Image>
+    <Image Include="Content\Images\Cards\Giant.png">
+      <Filter>Resource Files\Images\Cards</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="Content\Fonts\SourceSansPro-Regular.ttf">
+      <Filter>Resource Files\Fonts</Filter>
+    </Font>
+    <Font Include="Content\Fonts\SourceSansPro-Bold.ttf">
+      <Filter>Resource Files\Fonts</Filter>
+    </Font>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="Content\Sounds\splash_music.wav">
+      <Filter>Resource Files\Sounds</Filter>
+    </Media>
+    <Media Include="Content\Sounds\end_music.wav">
+      <Filter>Resource Files\Sounds</Filter>
+    </Media>
+    <Media Include="Content\Sounds\game_music.wav">
+      <Filter>Resource Files\Sounds</Filter>
+    </Media>
+    <Media Include="Content\Sounds\banish.wav">
+      <Filter>Resource Files\Sounds</Filter>
+    </Media>
+    <Media Include="Content\Sounds\card_dead.wav">
+      <Filter>Resource Files\Sounds</Filter>
+    </Media>
+    <Media Include="Content\Sounds\card_played.wav">
+      <Filter>Resource Files\Sounds</Filter>
+    </Media>
+    <Media Include="Content\Sounds\destroy.wav">
+      <Filter>Resource Files\Sounds</Filter>
+    </Media>
+    <Media Include="Content\Sounds\fireball.wav">
+      <Filter>Resource Files\Sounds</Filter>
+    </Media>
+    <Media Include="Content\Sounds\icestorm.wav">
+      <Filter>Resource Files\Sounds</Filter>
+    </Media>
+    <Media Include="Content\Sounds\lightning.wav">
+      <Filter>Resource Files\Sounds</Filter>
+    </Media>
+    <Media Include="Content\Sounds\reinforce.wav">
+      <Filter>Resource Files\Sounds</Filter>
+    </Media>
+  </ItemGroup>
+</Project>
